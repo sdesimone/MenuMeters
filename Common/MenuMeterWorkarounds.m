@@ -26,12 +26,13 @@
 #import "MenuMeterWorkarounds.h"
 #import "AppleUndocumented.h"
 
-// Declare NSProcessInfo version tests from 10.10
+/*
+// Declare NSProcessInfo version tests from 10.11
 #ifdef __x86_64__
 typedef struct {
-	int64_t majorVersion;
-	int64_t minorVersion;
-	int64_t patchVersion;
+    NSInteger majorVersion;
+    NSInteger minorVersion;
+    NSInteger patchVersion;
 } NSOperatingSystemVersion;
 #else 
 typedef struct {
@@ -40,7 +41,7 @@ typedef struct {
 	int32_t patchVersion;
 } NSOperatingSystemVersion;
 #endif
-
+*/
 @interface NSProcessInfo (MenuMetersWorkarounds)
 - (BOOL)isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion)version;
 @end

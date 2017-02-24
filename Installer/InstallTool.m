@@ -354,8 +354,8 @@ int main (int argc, const char *argv[]) {
 	}
 
 	// Fall through, never get here
-	[pool release];
+/*	[pool release];
 	installFailure();
 	return kInstallToolFail;
-
+*/
 } // main
